@@ -1,7 +1,8 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+const fs = require('fs');
 
-const createWindow = () => {
+const createWindow = (args) => {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
@@ -10,11 +11,14 @@ const createWindow = () => {
     }
   });
 
-  win.loadFile("index.html");
+  win.loadFile("index.html", {query: {"data": JSON.stringify(args)}});
 }
 
 app.whenReady().then(() => {
-    createWindow();
+    let rawdata = fs.readFileSync('event-placeholder.json');
+    let tasks = JSON.parse(rawdata);
+
+    createWindow(tasks);
 
     app.on('window-all-closed', () => {
         if (process.platform !== 'darwin') app.quit();
