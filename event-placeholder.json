@@ -1,0 +1,14 @@
+{
+    "events": [
+        {
+            "cardId": "14-88-aa",
+            "isTouched": true,
+            "timestamp": 1633782545
+        },
+        {
+            "cardId": "14-88-aa",
+            "isTouched": false,
+            "timestamp": 1633782645
+        }
+    ]
+}
