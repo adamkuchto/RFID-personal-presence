@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
     <meta charset="UTF-8" />
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta
@@ -11,12 +15,19 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>Hello World!</title>
+    <title>Januszex Reader</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>, Chromium
-    <span id="chrome-version"></span>, and Electron
-    <span id="electron-version"></span>.
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <p class="title">Januszex Reader</p>
+        <p class="subtitle">Twój panel do zarządania pracownikami!</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <ol class="timesheet-wrapper"></ol>
+      </div>
+    </section>
   </body>
 </html>

@@ -1,0 +1,19 @@
+{
+    "events": [
+        {
+            "cardId": "14-88-aa",
+            "startDate": 1633791515,
+            "endDate": 1633791581
+        },
+        {
+            "cardId": "14-88-aa",
+            "startDate": 1633794515,
+            "endDate": 1633795581
+        },
+        {
+            "cardId": "14-88-aa",
+            "startDate": 1633796515,
+            "endDate": 1633796581
+        }
+    ]
+}
