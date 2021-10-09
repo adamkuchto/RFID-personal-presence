@@ -9,6 +9,7 @@
   "author": "Ariel Kuźmiński",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^15.1.2"
+    "electron": "^15.1.2",
+    "electron-packager": "^15.4.0"
   }
 }
