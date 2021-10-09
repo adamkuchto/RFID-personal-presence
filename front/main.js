@@ -15,7 +15,8 @@ const createWindow = (args) => {
 }
 
 app.whenReady().then(() => {
-    let rawdata = fs.readFileSync('event-placeholder.json');
+    const myPath = path.join(__dirname, 'event-placeholder.json');
+    let rawdata = fs.readFileSync(myPath);
     let tasks = JSON.parse(rawdata);
 
     createWindow(tasks);
